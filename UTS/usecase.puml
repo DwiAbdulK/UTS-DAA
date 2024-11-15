@@ -1,0 +1,23 @@
+@startuml
+actor "Pengguna" as User
+actor "Admin" as Admin
+
+usecase "Lihat Menu" as UC1
+usecase "Filter Menu Berdasarkan Kategori" as UC2
+usecase "Lihat Keterangan Menu" as UC3
+usecase "Cek Harga Menu" as UC4
+usecase "Cek Ketersediaan Menu" as UC5
+usecase "Tambahkan Menu" as UC6
+usecase "Perbarui Menu" as UC7
+usecase "Hapus Menu" as UC8
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+
+Admin --> UC6
+Admin --> UC7
+Admin --> UC8
+@enduml

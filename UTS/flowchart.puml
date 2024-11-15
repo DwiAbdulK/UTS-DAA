@@ -1,0 +1,37 @@
+@startuml
+start
+
+:Pengguna ingin melihat menu;
+if (User ingin filter menu?) then (yes)
+  :Filter Menu Berdasarkan Kategori;
+endif
+
+if (User ingin melihat keterangan menu?) then (yes)
+  :Lihat Keterangan Menu;
+endif
+
+if (User ingin cek harga menu?) then (yes)
+  :Cek Harga Menu;
+endif
+
+if (User ingin cek ketersediaan menu?) then (yes)
+  :Cek Ketersediaan Menu;
+endif
+
+stop
+
+:Admin mengelola menu;
+if (Admin ingin tambahkan menu?) then (yes)
+  :Tambahkan Menu;
+endif
+
+if (Admin ingin perbarui menu?) then (yes)
+  :Perbarui Menu;
+endif
+
+if (Admin ingin hapus menu?) then (yes)
+  :Hapus Menu;
+endif
+
+stop
+@enduml
